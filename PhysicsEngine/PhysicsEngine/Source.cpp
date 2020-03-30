@@ -17,11 +17,11 @@ int main(int argc, char* argv[])
 
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
-		std::cout << "SDL Could not initialize because :  " << SDL_GetError();
+		std::cout << "SDL error ->  " << SDL_GetError();
 	}
 	else
 	{
-		std::cout << "SDL is work";
+		std::cout << "SDL is working correctly";
 	}
 
 	SDL_Window* pWindow = NULL;
