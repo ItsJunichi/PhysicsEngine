@@ -60,4 +60,11 @@ int main(int argc, char* argv[])
 		}
 	}
 	return 0;
+
+
+}
+
+void DrawBox(Box* b)
+{
+	SDL_RenderDrawLine(pRenderer, b->GetBox().TL.x, b->GetBox().TL.y, b->GetBox().TR.x, b->GetBox().TR.y);
 }

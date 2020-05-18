@@ -1,6 +1,6 @@
 #include "RigidbodyComponent.h"
 
-RigidbodyComponent::RigidbodyComponent(Vec2 vel, Vec2 pos, float a, Vec2 f, float g, float m, float r)
+RigidbodyComponent::RigidbodyComponent(Vec2 vel, Vec2 pos, float a, Vec2 f, float g, float m, float r, float ori, float ine)
 {
 	position = pos;
 	velocity = vel;
@@ -9,4 +9,6 @@ RigidbodyComponent::RigidbodyComponent(Vec2 vel, Vec2 pos, float a, Vec2 f, floa
 	grav = g;
 	mass = m;
 	res = r;
+	orientation = ori;
+	inertia = ine;
 }
